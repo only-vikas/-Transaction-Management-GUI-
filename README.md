@@ -74,8 +74,8 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/transaction-management-gui.git
-cd transaction-management-gui
+git clone https://github.com/only-vikas/-Transaction-Management-GUI-.git
+cd -Transaction-Management-GUI-
 
 # Run the application (Maven Wrapper)
 ./mvnw javafx:run           # Linux/macOS
