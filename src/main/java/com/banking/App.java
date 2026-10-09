@@ -19,6 +19,8 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) {
         BankingService bankingService = new BankingService();
+        seedSampleData(bankingService);
+
         MainView mainView = new MainView(bankingService);
 
         Scene scene = new Scene(mainView.getRoot(), MIN_WIDTH, MIN_HEIGHT);
@@ -32,6 +34,26 @@ public class App extends Application {
         primaryStage.setMinWidth(MIN_WIDTH);
         primaryStage.setMinHeight(MIN_HEIGHT);
         primaryStage.show();
+
+        System.out.println("=================================================");
+        System.out.println("🏦 Banking Transaction Management System Launched");
+        System.out.println("=================================================");
+        System.out.println("Active Accounts: " + bankingService.getTotalAccounts());
+        System.out.printf("Total Vault Balance: $%,.2f%n", bankingService.getTotalBalance());
+        System.out.println("Total Transactions: " + bankingService.getTotalTransactions());
+        System.out.println("Status: GUI Window opened successfully.");
+        System.out.println("=================================================");
+    }
+
+    private void seedSampleData(BankingService service) {
+        if (service.getAllAccounts().isEmpty()) {
+            var sa = service.createSavingsAccount("Alice Smith", 5000.00, 4.5, 500.00);
+            var ca = service.createCheckingAccount("Bob Jones", 2500.00, 1000.00);
+            service.deposit(sa.getAccountId(), 1200.00);
+            service.withdraw(ca.getAccountId(), 350.00);
+            service.applyInterest(sa.getAccountId());
+            service.transfer(sa.getAccountId(), ca.getAccountId(), 300.00);
+        }
     }
 
     public static void main(String[] args) {
