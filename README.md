@@ -27,6 +27,11 @@ A sample banking transaction management system built with **Java** and **JavaFX*
 | **Encapsulation** | Private fields with controlled getter/setter access |
 | **Singleton** | `AccountDatabase` ensures a single shared data store |
 
+
+
+<img width="1917" height="1013" alt="image" src="https://github.com/user-attachments/assets/72632886-d724-4188-96fa-19263db9df2c" />
+
+
 ## 📁 Project Structure
 
 ```
