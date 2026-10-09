@@ -92,20 +92,24 @@ The transaction history view provides a full audit trail of the system. It logs 
 
 ### Dashboard screen
 
-<img width="1917" height="1013" alt="Dashboard screenshot" src="https://github.com/user-attachments/assets/72632886-d724-4188-96fa-19263db9df2c" />
+<img width="1917" height="1015" alt="Screenshot 2026-10-09 133837" src="https://github.com/user-attachments/assets/2be2874f-d1ac-4198-9232-246e7a8ebd57" />
 
 The dashboard summarizes system health with summary cards, recent transaction records, and account overview panels.
 
 ### Create account screen
 
+<img width="1917" height="1018" alt="Screenshot 2026-10-09 133901" src="https://github.com/user-attachments/assets/5d338379-4682-436b-951f-3fcff43c6e68" />
+
 This form lets users create a new Savings or Checking account by entering basic details and initial financial values.
 
 ### Operations screen
+<img width="1917" height="1011" alt="Screenshot 2026-10-09 133922" src="https://github.com/user-attachments/assets/77f758d8-7cbb-440c-b5df-7ae5c1625f75" />
 
 This page allows direct deposit, withdrawal, and interest calculations for a selected account, keeping the banking workflow simple and visual.
 
 ### Transaction history screen
 
+<img width="1917" height="1013" alt="Dashboard screenshot" src="https://github.com/user-attachments/assets/72632886-d724-4188-96fa-19263db9df2c" />
 This table contains the complete ledger of all account transactions, making it easy to inspect account movement over time.
 
 ## 📁 Project Structure
